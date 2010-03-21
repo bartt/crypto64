@@ -15,9 +15,6 @@ begin
     gem.homepage = 'http://github.com/bartt/crypto64'
     readmes = FileList.new('*') { |list| list.exclude(/[a-z]/) }.to_a
     gem.files = FileList['lib/**/*', 'bin/*', 'test/**/*', 'Rakefile'].to_a + readmes
-
-    gem.add_dependency 'openssl'
-    gem.add_dependency 'base64'
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError

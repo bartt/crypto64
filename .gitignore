@@ -1,2 +1,4 @@
 /crypto64.gemspec
 /pkg
+*~
+\#*
